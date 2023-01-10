@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/* PRODUCT */
+.product {
+  border: 4px solid #000;
+
+  width: 825px;
+  margin: 50px auto;
+
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+}
+
+.product-title {
+  grid-column: 1 / -1;
+
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+
+  background-color: #f7f7f7;
+
+  padding: 15px;
+}
+
+/* PRODUCT INFORMATION */
+.info {
+  flex: 1;
+
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+}
+
+.shipping {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #777;
+}
+
+.sale {
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -36px;
+
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  padding: 7px 15px;
+}
+
+.product-info {
+  margin-bottom: 10px;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: #000;
+
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.colors {
+  display: flex;
+  gap: 15px;
+}
+
+.color {
+  width: 22px;
+  height: 22px;
+
+  background-color: #000;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+
+.color-red {
+  background-color: #ec2f2f;
+}
+
+.color-yellow {
+  background-color: #f0bf1e;
+}
+
+.color-green {
+  background-color: #90cc20;
+}
+
+.color-brown {
+  background-color: #885214;
+}
+
+/* PRODUCT DETAILS */
+.product-details {
+  flex: 1;
+
+  margin-top: 20px;
+}
+
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+
+  margin-bottom: 15px;
+}
+
+.details-list {
+  list-style: square;
+
+  margin-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+
+.add-cart {
+  grid-column: 1 / -1;
+
+  background-color: #000;
+  border: none;
+
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  width: 100%;
+  padding: 15px;
+
+  border-top: 4px solid #000;
+}
+
+.add-cart:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+/* h2::before {
+  content: "SALE";
+  color: #fff;
+  background-color: #ec2f2f;
+  font-size: 13px;
+  letter-spacing: 2px;
+
+  padding: 7px 15px;
+
+  display: inline-block;
+
+  position: absolute;
+  top: -17px;
+  left: -36px;
+} */
